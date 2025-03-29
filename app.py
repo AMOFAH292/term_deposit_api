@@ -23,7 +23,7 @@ def predict():
         probability = float(model.predict_proba(features)[0][1])
 
         return jsonify({
-            "prediction": prediction",
+            "prediction": prediction,
             "Prediction_probability": round(probability, 2)
         })
 
